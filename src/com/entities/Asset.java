@@ -1,4 +1,4 @@
-package com.wallet;
+package com.entities;
 
 public class Asset {
     private String assetCode;
@@ -31,6 +31,11 @@ public class Asset {
 
     public void setPricePerUnity(Double pricePerUnity) {
         this.pricePerUnity = pricePerUnity;
+    }
+
+    // total invested
+    public Double totalInvested(){
+        return pricePerUnity * amount;
     }
 
     // toString method
